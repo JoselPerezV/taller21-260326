@@ -66,7 +66,16 @@ public class ListaNumeros {
     
     }
     
-    
+    //Metodo que recorre la lista y cuenta cuantos elementos hay
+    public int size(){
+    int contador = 0;
+    NodoNumero actual = cabeza;
+    while(actual != null){
+    contador++;
+    actual = actual.getSiguiente();
+    }
+    return contador;    
+    }
     
     
 }
