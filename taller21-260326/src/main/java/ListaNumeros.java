@@ -43,4 +43,30 @@ public class ListaNumeros {
     }
     
     
+    
+    //metodo que elimina el elemneto dictado por el teclado
+    public void eliminar(int dato){
+    if(cabeza == null) return;
+    
+    //En caso de que el elemeno a eliminar es la cabeza de la lista
+    if(cabeza.getDato() == dato){
+        cabeza = cabeza.getSiguiente();
+        return;
+    }
+    
+    //Recorre la lista buscando el valor que se digite
+    NodoNumero actual = cabeza;
+    while(actual.getSiguiente() !=  null){
+        if(actual.getSiguiente().getDato() == dato){
+            actual.setSiguiente(actual.getSiguiente().getSiguiente());
+            return;
+        }
+        actual = actual.getSiguiente();
+    }
+    
+    }
+    
+    
+    
+    
 }
