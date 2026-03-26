@@ -21,4 +21,14 @@ public class ListaNumeros {
     }
     }
     
+    //metodo Mostrar muestra la lista
+    public void mostrar(){
+    NodoNumero actual = cabeza;
+    while(actual != null){
+        System.out.print(actual.getDato()+ " ");
+        actual = actual.getSiguiente();
+    }
+        System.out.println();//salto de linea
+    }
+    
 }
