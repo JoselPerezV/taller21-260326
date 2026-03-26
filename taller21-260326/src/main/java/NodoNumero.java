@@ -12,4 +12,8 @@ public class NodoNumero {
     this.siguiente = null;
     }
     
+    //metodos Getter y Setters
+    public int getDato(){
+    return dato;
+    }
 }
