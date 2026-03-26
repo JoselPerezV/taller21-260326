@@ -31,4 +31,16 @@ public class ListaNumeros {
         System.out.println();//salto de linea
     }
     
+    //metodo para sumar los elemento de la lista 
+    public int sumar(){
+        int suma = 0;
+        NodoNumero actual = cabeza;
+        while(actual != null){
+            suma +=actual.getDato();
+            actual = actual.getSiguiente();
+        }
+       return suma;
+    }
+    
+    
 }
