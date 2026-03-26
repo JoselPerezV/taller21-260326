@@ -6,4 +6,19 @@ public class ListaNumeros {
     cabeza= null;
     }
     
+    //Insertar un numero al final de la lista 
+    public void insertar(int dato){
+    NodoNumero nuevo = new NodoNumero(dato);
+    
+    if(cabeza == null){
+        cabeza = nuevo;
+    }else{
+    NodoNumero actual = cabeza;
+    while(actual.getSiguiente()!= null){
+        actual=actual.getSiguiente();
+    }
+    actual.setSiguiente(nuevo);
+    }
+    }
+    
 }
